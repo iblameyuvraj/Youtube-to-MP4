@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube to MP4 Downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.js">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-youtube"></i> YouTube to MP4 Downloader</h1>
+            <p>Convert YouTube videos to MP4 format quickly and easily. Simply paste the URL below and download high-quality videos.</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <div class="input-group">
+                    <input type="url" id="youtube-url" placeholder="Paste YouTube URL here (e.g. https://www.youtube.com/watch?v=...)" autocomplete="off">
+                    <button class="btn" id="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+                
+                <div class="status-message" id="status-message"></div>
+                
+                <div class="preview-container" id="preview-container">
+                    <div class="thumbnail">
+                        <img id="video-thumb" src="" alt="Video thumbnail">
+                    </div>
+                    <div class="video-info">
+                        <h3 id="video-title">Video Title</h3>
+                        <p id="video-channel">Channel Name</p>
+                        <p id="video-duration">Duration: 00:00</p>
+                    </div>
+                </div>
+                
+                <div class="progress-container" id="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="progress-text" id="progress-text">Processing...</div>
+            </div>
+            
+            <div class="downloads-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-file-download"></i> Your Downloads</h2>
+                    <button class="btn btn-secondary" id="refresh-btn">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </button>
+                </div>
+                
+                <div class="card">
+                    <div class="downloads-grid" id="downloads-grid">
+                        <!-- Download items will be added here dynamically -->
+                        <div class="no-downloads">
+                            <i class="fas fa-cloud-download-alt" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                            <p>No downloads yet. Convert your first YouTube video!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+           <p>YouTube to MP4 Downloader | by <a href="https://yuvraj.site" target="_blank" style="text-decoration:none;color:inherit;font-weight:bold">yuvraj</a></p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
