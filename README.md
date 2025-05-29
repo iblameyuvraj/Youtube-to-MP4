@@ -15,4 +15,4 @@ A web-based application that allows users to download YouTube videos by providin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/iblameyuvraj/youtube-downloader.git
+   git clone https://github.com/iblameyuvraj/Youtube-to-MP4.git
